@@ -1,0 +1,54 @@
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[user]
+	name = Victor Lee
+	email = lzs_1993@qq.com
+[log]
+	template = log_template
+	mailmap = true
+[core]
+	editor = 'EmEditor.exe' //sp
+	attributesfile = C:/Users/zhens/.gitattributes
+	whitespace = -trailing-space,-indent-with-non-tab,-tab-in-indent
+[pull]
+	rebase = true
+[diff]
+	tool = araxis
+	guitool = araxis
+	renames = true
+	[difftool "araxis"]
+		path = D:\\Program Files\\Araxis\\Araxis Merge\\Compare.exe
+	[difftool "bc"]
+		path = D:\\Program Files\\Araxis\\Araxis Merge\\Compare.exe
+	[diff "labview"]
+		command = LVCompareWrapper.sh
+		tool = labview
+		guitool = labview
+	[difftool "labview"]
+		cmd = LVCompareWrapper.sh \"${LOCAL}\" \"${REMOTE}\"
+		prompt = false
+	[diff "cpp"]
+		binary = false
+		# textconv = strcmt.sh
+[merge]
+	tool = araxis
+	guitool = araxis
+	keepBackup = false
+	[mergetool "araxis"]
+		path = D:\\Program Files\\Araxis\\Araxis Merge\\Compare.exe
+	[mergetool "bc"]
+		path = D:\\Program Files\\Araxis\\Araxis Merge\\Compare.exe
+	[merge "labview"]
+		tool = labview
+		name = LabView Merge Driver
+		driver = LVMergeWrapper.sh \"%O\" \"%B\" \"%A\"
+	[mergetool "labview"]
+		cmd = LVMergeWrapper.sh \"${BASE}\" \"${REMOTE}\" \"${LOCAL}\"
+		trustExitCode = true
+[credential]
+	helper = manager
+[winUpdater]
+	recentlySeenVersion = 2.19.1.windows.1

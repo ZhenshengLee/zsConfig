@@ -1,0 +1,35 @@
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[user]
+	name = Victor Lee
+	email = lzs_1993@qq.com
+[log]
+	template = log_template
+	mailmap = true
+[core]
+	editor = "gedit -w -s"
+	attributesfile = /home/zs/.gitattributes
+	whitespace = -trailing-space,-indent-with-non-tab,-tab-in-indent
+[pull]
+	rebase = true
+[diff]
+	tool = bc3
+	guitool = bc3
+	renames = true
+	[difftool "bc3"]
+		path = /usr/bin/bcompare
+		trustExitCode = true
+	[diff "cpp"]
+		binary = false
+		# textconv = strcmt.sh
+[merge]
+	tool = bc3
+	guitool = bc3
+	keepBackup = false
+	[mergetool "bc3"]
+		path = /usr/bin/bcompare
+[credential]
+	helper = manager

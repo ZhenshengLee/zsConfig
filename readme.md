@@ -48,6 +48,49 @@
 - 关闭不必要的启动项
 - 总之要把Windows 设置全部看一遍
 
+### windows 环境变量
+
+#### 局部环境变量
+
+局部变量主要就是一些绿色软件的bin目录
+
+```sh
+%USERPROFILE%\AppData\Local\Microsoft\WindowsApps
+C:\Users\zhens\AppData\Roaming\npm
+D:\opt\Prince\engine\bin
+D:\opt\phantomjs-2.1.1-windows\bin
+D:\usr\LLVM\bin
+D:\lint
+D:\opt\AStyle\bin
+D:\opt\ctags58\
+C:\Users\zhens\AppData\Local\Programs\EmEditor
+D:\opt\shellcheck
+C:\Users\zhens\AppData\Local\Programs\Microsoft VS Code\bin
+D:\opt\oflash\
+D:\Program Files (x86)\openocd\0.6.0\bin
+C:\Users\zhens\.vscode\extensions\metalcode-eu.windows-arm-none-eabi-0.1.6\bin\
+D:\ProgramData\Anaconda3
+D:\ProgramData\Anaconda3\Scripts
+D:\ProgramData\Anaconda3\Library\bin
+```
+
+#### 全局环境变量
+
+一般是安装软件自动添加的变量
+
+```sh
+D:\usr\ActiveTcl\bin
+C:\Program Files\Docker\Docker\resources\bin
+D:\Program Files\MATLAB\R2014b\bin
+D:\Program Files\MATLAB\R2014b\bin\win64
+C:\ProgramData\Oracle\Java\javapath
+C:\Windows\System32
+C:\Windows
+D:\Program Files\EmEditor
+D:\Program Files\CMake\bin
+D:\usr\LLVM\bin
+```
+
 ## 安装软件
 
 ### 绿色软件
@@ -58,12 +101,28 @@
 
 ### 日常软件包
 
+- office
+- internet downloader
+- chrome version of edge (可以使用谷歌插件的浏览器)
+
 ### 效率软件包
 
+- emeditor
+- beyond compare
+-
+
 ### 开发软件包
+
+- secureCRT
+-
 
 ### 虚拟机配置
 
 ## 虚拟机Linux软件安装
 
-
+工作软件配置包，快速入门
+VS2019及配置文件，快捷键配置
+首先必建立起笔记环境，以及从外界接受和发送笔记的环境；
+笔记环境首选essentialpim
+发送笔记环境可以是github
+若无信息安全要求，则使用自己的为知笔记

@@ -1,0 +1,19 @@
+To configure Merge as the Diff Viewer:
+In the TortoiseGit Settings window, select the Diff Viewer page.
+
+In the Configure the program used for comparing different revisions of files section, select the External radio button.
+
+In path field, enter the following (all on one line):
+
+"D:\Program Files\Araxis\Araxis Merge\Compare.exe" /max /wait /title1:%bname /title2:%yname %base %mine
+Note: in the above path, replace C:\Program Files\Araxis\Araxis Merge\ with the full path of the Merge installation directory on your machine.
+
+To configure Merge as the Merge Tool:
+In the TortoiseGit Settings window, select the Merge Tool page (located under Diff Viewer).
+
+Select the External radio button.
+
+In path field, enter the following (all on one line):
+
+"D:\Program Files\Araxis\Araxis Merge\Compare.exe" /a2 /max /wait /3 /title1:%tname /title2:%bname /title3:%yname %theirs %base %mine %merged
+Note: in the above path, replace C:\Program Files\Araxis\Araxis Merge\ with the full path of the Merge installation directory on your machine.
